@@ -1,0 +1,2 @@
+//Replace this file with the pushio_cofig.json that you download from the Dashboard
+{"pushio":{"apiKey":"YOUR_API_KEY","apiHost":"api.push.io"},"google":{"projectId":"000000000000"}}

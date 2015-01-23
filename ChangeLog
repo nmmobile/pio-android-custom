@@ -1,0 +1,63 @@
+* Wed Dec 10, 2014 - 2.10.7
+- Fixed issue with listeners not being registered.
+
+* Fri Nov 14, 2014 - 2.10.6
+- Replaced Notification APIs deprecated in Android 5.0.
+
+* Mon Oct 20, 2014 - 2.10.5
+- Fixed an issue when registering with GCM on Android 5.0.
+
+* Tue Feb 4, 2014 - 2.10.4
+-Added setting to turn off stacked built-in notifications, set using: setNotificationsStacked(false) 
+
+* Mon Oct 23, 2013 - 2.10.3
+- Fixed wake lock under-lock issue when a push is received on low-memory devices.  
+
+* Mon Oct 11, 2013 - 2.10.2
+- Removed automatic call to setEngagementId() when a custom notification is created. 
+
+* Mon Oct 7, 2013 - 2.10.1
+- Added isCurrentSessionAnEngagement() 
+- Fixed stability issue when using built-in notification on ICS devices. 
+
+* Thu Sept 26, 2013 - 2.10.0
+- Additional metadata fields added to registrations.
+
+* Mon Sept 16, 2013 - 2.9.4
+- Changes for baked in notifications:
+  - If no sound is sent, we now use the system default sound
+  - Fixed the uri used for sounds sent in the push payload.
+
+* Thur July 18th, 2013 - 2.9.2
+- setDefaultSmallIcon() and setDefaultLargeIcon() can now be set for Push IO generated notifications
+- Fixed blank notifications causing a crash
+- Push IO generated notifications will now use the application label for the title, if more than one line is included in the message the first line will now be used as the title
+- Push IO generated notification now use the application icon if no icon is defined.
+- Fixed activities launched through the activity launcher leaving a back stack.
+
+* Tue July 16th, 2013 - 2.9.1
+- Fixed stability issues when calling the Push IO Manager from a background thread.
+
+* Mon July 15th, 2013 - 2.9.0
+-The Push IO Manager is now a singleton, called through PushIOManager.getInstance()
+-Registrations are now queued and processed in a batch to prevent race conditions when registering\unregistering categories in quick succession.
+-New analytics information is now sent with registrations
+-Fixed a stability issue with the PushIOActivityLauncher
+
+* Tue May 7, 2013
+- Increased the Google Cloud Messaging registration timeout
+- Changed Async Tasks to use "THREAD_POOL_EXECUTOR" in Android 3.0 and above
+
+* Tue Oct 23, 2012
+- Added a helper to allow programmatic override of api key to support some edge cases
+
+* Fri Oct 19, 2012
+- .NOTIFICATIONPRESSED action now passes all of the original push payload data
+
+* Thu Oct 18, 2012
+– Support API level 8 and above
+
+* Wed Oct 17, 2012
+- Add custom engagement metric support
+- Initial support for trackers
+- Added a ChangeLog
