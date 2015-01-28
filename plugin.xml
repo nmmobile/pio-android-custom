@@ -2,7 +2,7 @@
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="com.nr.phonegap.pio"
-    version="0.0.7">
+    version="0.0.8">
 
     <name>Pio Plugin</name>
     
@@ -54,7 +54,7 @@
     
 
     <source-file src="src/android/lib/PushIOManager.jar" target-dir="src/android/lib" />
-    
+    <source-file src="src/android/lib/android-support-v4.jar" target-dir="src/android/lib" />
     
 </platform>
 
