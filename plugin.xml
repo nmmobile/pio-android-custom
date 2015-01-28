@@ -13,7 +13,7 @@
     <engines>
       <engine name="cordova" version=">=3.0.0" />
     </engines>
-    
+    <platform name="android">
     <config-file target="AndroidManifest.xml" parent="/manifest">
         <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
         
@@ -97,8 +97,158 @@
         
     </config-file>
     
-<platform name="android">
+
     <source-file src="src/android/lib/PushIOManager.jar" target-dir="libs" />
+    
+    <source-file src="src/android/google/android/gcm/GCMBaseIntentService.java"
+    target-dir="src/android/google/android/gcm" />
+    
+    <source-file src="src/android/google/android/gcm/GCMBroadcastReceiver.java"
+    target-dir="src/android/google/android/gcm" />
+    
+    <source-file src="src/android/google/android/gcm/GCMConstants.java"
+    target-dir="src/android/google/android/gcm" />
+    
+    <source-file src="src/android/google/android/gcm/GCMRegistrar.java"
+    target-dir="src/android/google/android/gcm" />
+    
+    
+    
+    <source-file src="src/android/arellomobile/android/push/AlarmReceiver.java"
+    target-dir="src/android/arellomobile/android/push" />
+    
+    <source-file src="src/android/arellomobile/android/push/BasePushMessageReceiver.java"
+    target-dir="src/android/arellomobile/android/push" />
+    
+    <source-file src="src/android/arellomobile/android/push/DeviceFeature2_5.java"
+    target-dir="src/android/arellomobile/android/push" />
+    
+    <source-file src="src/android/arellomobile/android/push/DeviceRegistrar.java"
+    target-dir="src/android/arellomobile/android/push" />
+    
+    <source-file src="src/android/arellomobile/android/push/GeoLocationService.java"
+    target-dir="src/android/arellomobile/android/push" />
+    
+    <source-file src="src/android/arellomobile/android/push/MessageActivity.java"
+    target-dir="src/android/arellomobile/android/push" />
+    
+    <source-file src="src/android/arellomobile/android/push/PackageRemoveReceiver.java"
+    target-dir="src/android/arellomobile/android/push" />
+    
+    <source-file src="src/android/arellomobile/android/push/PushEventsTransmitter.java"
+    target-dir="src/android/arellomobile/android/push" />
+    
+    <source-file src="src/android/arellomobile/android/push/PushGCMIntentService.java"
+    target-dir="src/android/arellomobile/android/push" />
+    
+    <source-file src="src/android/arellomobile/android/push/PushHandlerActivity.java"
+    target-dir="src/android/arellomobile/android/push" />
+    
+    <source-file src="src/android/arellomobile/android/push/PushManager.java"
+    target-dir="src/android/arellomobile/android/push" />
+    
+    <source-file src="src/android/arellomobile/android/push/PushServiceHelper.java"
+    target-dir="src/android/arellomobile/android/push" />
+    
+    <source-file src="src/android/arellomobile/android/push/PushWebview.java"
+    target-dir="src/android/arellomobile/android/push" />
+    
+    <source-file src="src/android/arellomobile/android/push/SendPushTagsCallBack.java"
+    target-dir="src/android/arellomobile/android/push" />
+    
+    <source-file src="src/android/arellomobile/android/push/data/PushZoneLocation.java"
+    target-dir="src/android/arellomobile/android/push/data" />
+    
+    <source-file src="src/android/arellomobile/android/push/preference/SoundType.java"
+    target-dir="src/android/arellomobile/android/push/preference" />
+    
+    <source-file src="src/android/arellomobile/android/push/preference/VibrateType.java"
+    target-dir="src/android/arellomobile/android/push/preference" />
+    
+    <source-file src="src/android/arellomobile/android/push/registrar/PushRegistrar.java"
+    target-dir="src/android/arellomobile/android/push/registrar" />
+    
+    <source-file src="src/android/arellomobile/android/push/registrar/PushRegistrarGCM.java"
+    target-dir="src/android/arellomobile/android/push/registrar" />
+    
+    <source-file src="src/android/arellomobile/android/push/request/ApplicationEventRequest.java"
+    target-dir="src/android/arellomobile/android/push/request" />
+    
+    <source-file src="src/android/arellomobile/android/push/request/AppOpenRequest.java"
+    target-dir="src/android/arellomobile/android/push/request" />
+    
+    <source-file src="src/android/arellomobile/android/push/request/AppRemovedRequest.java"
+    target-dir="src/android/arellomobile/android/push/request" />
+    
+    <source-file src="src/android/arellomobile/android/push/request/GetBeaconsRequest.java"
+    target-dir="src/android/arellomobile/android/push/request" />
+    
+    <source-file src="src/android/arellomobile/android/push/request/GetNearestZoneRequest.java"
+    target-dir="src/android/arellomobile/android/push/request" />
+    
+    <source-file src="src/android/arellomobile/android/push/request/GetTagsRequest.java"
+    target-dir="src/android/arellomobile/android/push/request" />
+    
+    <source-file src="src/android/arellomobile/android/push/request/MessageDeliveredRequest.java"
+    target-dir="src/android/arellomobile/android/push/request" />
+    
+    <source-file src="src/android/arellomobile/android/push/request/ProcessBeaconRequest.java"
+    target-dir="src/android/arellomobile/android/push/request" />
+    
+    <source-file src="src/android/arellomobile/android/push/request/PushRequest.java"
+    target-dir="src/android/arellomobile/android/push/request" />
+    
+    <source-file src="src/android/arellomobile/android/push/request/PushStatRequest.java"
+    target-dir="src/android/arellomobile/android/push/request" />
+    
+    <source-file src="src/android/arellomobile/android/push/request/RegisterDeviceRequest.java"
+    target-dir="src/android/arellomobile/android/push/request" />
+    
+    <source-file src="src/android/arellomobile/android/push/request/RequestManager.java"
+    target-dir="src/android/arellomobile/android/push/request" />
+    
+    <source-file src="src/android/arellomobile/android/push/request/SetTagsRequest.java"
+    target-dir="src/android/arellomobile/android/push/request" />
+    
+    <source-file src="src/android/arellomobile/android/push/request/TrackInAppRequest.java"
+    target-dir="src/android/arellomobile/android/push/request" />
+    
+    <source-file src="src/android/arellomobile/android/push/request/UnregisterDeviceRequest.java"
+    target-dir="src/android/arellomobile/android/push/request" />
+    
+    <source-file src="src/android/arellomobile/android/push/utils/executor/ExecutorHelper.java"
+    target-dir="src/android/arellomobile/android/push/utils/executor" />
+    
+    <source-file src="src/android/arellomobile/android/push/utils/executor/V11ExecutorHelper.java"
+    target-dir="src/android/arellomobile/android/push/utils/executor" />
+    
+    <source-file src="src/android/arellomobile/android/push/utils/notification/BannerNotificationFactory.java"
+    target-dir="src/android/arellomobile/android/push/utils/notification" />
+    
+    <source-file src="src/android/arellomobile/android/push/utils/notification/BaseNotificationFactory.java"
+    target-dir="src/android/arellomobile/android/push/utils/notification" />
+    
+    <source-file src="src/android/arellomobile/android/push/utils/notification/Helper.java"
+    target-dir="src/android/arellomobile/android/push/utils/notification" />
+    
+    <source-file src="src/android/arellomobile/android/push/utils/notification/SimpleNotificationFactory.java"
+    target-dir="src/android/arellomobile/android/push/utils/notification" />
+    
+    <source-file src="src/android/arellomobile/android/push/utils/GeneralUtils.java"
+    target-dir="src/android/arellomobile/android/push/utils" />
+    
+    <source-file src="src/android/arellomobile/android/push/utils/JsonUtils.java"
+    target-dir="src/android/arellomobile/android/push/utils" />
+    
+    <source-file src="src/android/arellomobile/android/push/utils/PreferenceUtils.java"
+    target-dir="src/android/arellomobile/android/push/utils" />
+    
+    <source-file src="src/android/arellomobile/android/push/utils/RegisterBroadcastReceiver.java"
+    target-dir="src/android/arellomobile/android/push/utils" />
+    
+    <source-file src="src/android/arellomobile/android/push/utils/WorkerTask.java"
+    target-dir="src/android/arellomobile/android/push/utils" />
+
 </platform>
 
 
