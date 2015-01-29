@@ -2,7 +2,7 @@
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="com.nr.phonegap.pio"
-    version="0.1.5">
+    version="0.1.6">
 
     <name>Pio Plugin</name>
     
@@ -29,12 +29,6 @@
     
     <config-file target="AndroidManifest.xml" parent="/manifest/application">
         
-        <receiver android:name="com.pushio.basic.NotificationBroadcastReceiver">
-            <intent-filter>
-                <action  android:name="com.pushio.basic.PUSHIOPUSH"/>
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </receiver>
         <receiver android:name="com.pushio.manager.PushIOBroadcastReceiver"
             android:permission="com.google.android.c2dm.permission.SEND">
             <intent-filter>
