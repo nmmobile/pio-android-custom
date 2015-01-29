@@ -2,7 +2,7 @@
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="com.nr.phonegap.pio"
-    version="0.1.0">
+    version="0.1.1">
 
     <name>Pio Plugin</name>
     
@@ -23,9 +23,9 @@
         android:protectionLevel="signature" />
     </config-file>
     
-    <config-file target="AndroidManifest.xml" parent="/manifest/application/activity">
+    <!--<config-file target="AndroidManifest.xml" parent="/manifest/application/activity">
 
-    </config-file>
+    </config-file>-->
     
     <config-file target="AndroidManifest.xml" parent="/manifest/application">
         
