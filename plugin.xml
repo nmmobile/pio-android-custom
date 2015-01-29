@@ -2,7 +2,7 @@
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="com.nr.phonegap.pio"
-    version="0.2.8">
+    version="0.2.9">
 
     <name>Pio Plugin</name>
     
@@ -54,9 +54,6 @@
         <service android:name="com.pushio.manager.PushIOEngagementService" />
 
     </config-file>
-
-    <asset src="pushio_config/pushio_config.json" target="../pushio_config.json" />
-    <asset src="pushio_config/pushio_config.json" target="../assets" />
     
     <source-file src="src/android/lib/android-support-v4.jar" target-dir="libs" />
     <source-file src="src/android/lib/PushIOManager.jar" target-dir="libs" />
