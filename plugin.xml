@@ -2,7 +2,7 @@
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="com.nr.phonegap.pio"
-    version="0.1.7">
+    version="0.1.9">
 
     <name>Pio Plugin</name>
     
@@ -27,7 +27,7 @@
 
     </config-file>-->
     
-    <!--<config-file target="AndroidManifest.xml" parent="/manifest/application">
+    <config-file target="AndroidManifest.xml" parent="/manifest/application">
         
         <receiver android:name="com.pushio.manager.PushIOBroadcastReceiver"
             android:permission="com.google.android.c2dm.permission.SEND">
@@ -42,7 +42,7 @@
         <service android:name="com.pushio.manager.PushIOGCMIntentService" />
         <service android:name="com.pushio.manager.PushIOEngagementService" />
 
-    </config-file>-->
+    </config-file>
 
     
     <source-file src="src/android/lib/android-support-v4.jar" target-dir="libs" framework="true" />
