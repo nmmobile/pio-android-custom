@@ -2,7 +2,7 @@
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="com.nr.phonegap.pio"
-    version="0.2.0">
+    version="0.2.1">
 
     <name>Pio Plugin</name>
     
@@ -15,11 +15,11 @@
     </engines>
     <platform name="android">
     <config-file target="AndroidManifest.xml" parent="/manifest">
-        <uses-permission android:name="com.pushio.basic.permission.C2D_MESSAGE" />
+        <uses-permission android:name="com.tigerdirect.td.permission.C2D_MESSAGE" />
         <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
         <uses-permission android:name="android.permission.WAKE_LOCK" />
         <uses-permission android:name="android.permission.INTERNET" />
-        <permission android:name="com.pushio.basic.permission.C2D_MESSAGE"
+        <permission android:name="com.tigerdirect.td.permission.C2D_MESSAGE"
         android:protectionLevel="signature" />
     </config-file>
     
