@@ -2,7 +2,7 @@
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="com.nr.phonegap.pio"
-    version="0.3.3">
+    version="0.3.4">
 
     <name>Pio Plugin</name>
     
@@ -46,9 +46,9 @@
             </intent-filter>
         </receiver>
         
-        <activity android:name="com.pushio.manager.PushIOActivityLauncher" android:exported="true" />
-        <!--<service android:name="com.pushio.manager.PushIOGCMIntentService" />-->
-        <service android:name="com.pushio.manager.PushIOEngagementService" />
+        <!--<activity android:name="com.pushio.manager.PushIOActivityLauncher" android:exported="true" />
+        <service android:name="com.pushio.manager.PushIOGCMIntentService" />
+        <service android:name="com.pushio.manager.PushIOEngagementService" />-->
         
     </config-file>
     
