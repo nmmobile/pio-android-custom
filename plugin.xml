@@ -46,9 +46,9 @@
             </intent-filter>
         </receiver>
         
-        <!--<activity android:name="com.pushio.manager.PushIOActivityLauncher" android:exported="true" />
+        <activity android:name="com.pushio.manager.PushIOActivityLauncher" android:exported="true" />
         <service android:name="com.pushio.manager.PushIOGCMIntentService" />
-        <service android:name="com.pushio.manager.PushIOEngagementService" />-->
+        <service android:name="com.pushio.manager.PushIOEngagementService" />
         
     </config-file>
     
