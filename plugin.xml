@@ -2,7 +2,7 @@
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="com.nr.phonegap.pio"
-    version="0.3.2">
+    version="0.3.3">
 
     <name>Pio Plugin</name>
     
@@ -47,7 +47,7 @@
         </receiver>
         
         <activity android:name="com.pushio.manager.PushIOActivityLauncher" android:exported="true" />
-        <service android:name="com.pushio.manager.PushIOGCMIntentService" />
+        <!--<service android:name="com.pushio.manager.PushIOGCMIntentService" />-->
         <service android:name="com.pushio.manager.PushIOEngagementService" />
         
     </config-file>
@@ -56,8 +56,8 @@
     
     
     
-    <!--<source-file src="src/android/lib/PushIOManager.jar" target-dir="libs" />-->
-    <source-file src="src/android/manager/BuildConfig.java" target-dir="libs" />
+    <source-file src="src/android/lib/PushIOManager.jar" target-dir="libs" />
+    <!--<source-file src="src/android/manager/BuildConfig.java" target-dir="libs" />
     <source-file src="src/android/manager/PushIOConfig.java" target-dir="libs" />
     <source-file src="src/android/manager/PushIOActivityLauncher.java" target-dir="libs" />
     <source-file src="src/android/manager/PushIOADMBroadcastReceiver.java" target-dir="libs" />
@@ -75,7 +75,7 @@
     
     
     <source-file src="src/android/manager/trackers/PushIOPublisher.java" target-dir="libs" />
-    <source-file src="src/android/manager/trackers/PushIOTracker.java" target-dir="libs" />
+    <source-file src="src/android/manager/trackers/PushIOTracker.java" target-dir="libs" />-->
 
 
 
