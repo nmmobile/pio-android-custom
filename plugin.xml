@@ -2,7 +2,7 @@
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="com.nr.phonegap.pio"
-    version="0.3.0">
+    version="0.3.2">
 
     <name>Pio Plugin</name>
     
@@ -53,10 +53,36 @@
     </config-file>
     
     <!--<source-file src="src/android/lib/android-support-v4.jar" target-dir="libs" />-->
-    <source-file src="src/android/lib/PushIOManager.jar" target-dir="libs" />
-
- 
     
+    
+    
+    <!--<source-file src="src/android/lib/PushIOManager.jar" target-dir="libs" />-->
+    <source-file src="src/android/manager/BuildConfig.java" target-dir="libs" />
+    <source-file src="src/android/manager/PushIOConfig.java" target-dir="libs" />
+    <source-file src="src/android/manager/PushIOActivityLauncher.java" target-dir="libs" />
+    <source-file src="src/android/manager/PushIOADMBroadcastReceiver.java" target-dir="libs" />
+    <source-file src="src/android/manager/PushIOSharedPrefs.java" target-dir="libs" />
+    <source-file src="src/android/manager/PushIOBroadcastReceiver.java" target-dir="libs" />
+    <source-file src="src/android/manager/PushIOEngagementService.java" target-dir="libs" />
+    <source-file src="src/android/manager/PushIOManager.java" target-dir="libs" />
+    <source-file src="src/android/manager/PushIOGCMIntentService.java" target-dir="libs" />
+    <source-file src="src/android/manager/PushIOTask.java" target-dir="libs" />
+    
+    <source-file src="src/android/manager/tasks/PushIOEngagementListener.java" target-dir="libs" />
+    <source-file src="src/android/manager/tasks/PushIOEngagementTask.java" target-dir="libs" />
+    <source-file src="src/android/manager/tasks/PushIOListener.java" target-dir="libs" />
+    <source-file src="src/android/manager/tasks/PushIORegisterTask.java" target-dir="libs" />
+    
+    
+    <source-file src="src/android/manager/trackers/PushIOPublisher.java" target-dir="libs" />
+    <source-file src="src/android/manager/trackers/PushIOTracker.java" target-dir="libs" />
+
+
+
+
+
+
+
 </platform>
 
 
